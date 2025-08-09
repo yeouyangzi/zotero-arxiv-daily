@@ -142,6 +142,8 @@ if __name__ == '__main__':
         default="English",
     )
     parser.add_argument('--debug', action='store_true', help='Debug mode')
+    print(args.language)
+    print(args.zotero_ignore)
     args = parser.parse_args()
     assert (
         not args.use_llm_api or args.openai_api_key is not None
